@@ -7,7 +7,7 @@ int main(){
     
     int ret;
     if (fork() == 0){
-        ret = execl("/usr/bin/grep", "grep", "Lorem", "text.txt", NULL);
+        ret = execl("/usr/bin/grep", "grep", "Lorem", "test.txt", NULL);
     }
     else{
         wait(NULL);
